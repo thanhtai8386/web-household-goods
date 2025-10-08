@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cửa hàng Đồ Gia Dụng</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #0078d7;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .product-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .product {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+    .product:hover {
+      transform: scale(1.03);
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 15px;
+    }
+    .product-info h3 {
+      margin: 0 0 10px 0;
+    }
+    .price {
+      color: #e60023;
+      font-weight: bold;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .btn {
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    .btn:hover {
+      background-color: #005ea6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🛒 Cửa hàng Đồ Gia Dụng</h1>
+    <p>Mua sắm dễ dàng - Giá tốt mỗi ngày</p>
+  </header>
+
+  <section class="product-container">
+    <div class="product">
+      <img src="https://cdn.tgdd.vn/Products/Images/1942/318659/smart-tivi-lg-4k-65-inch-65uq8000psc-1-600x600.jpg" alt="Tivi LG 65 inch">
+      <div class="product-info">
+        <h3>Tivi LG 65 inch 4K</h3>
+        <span class="price">14.990.000₫</span>
+        <button class="btn">Thêm vào giỏ</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://cdn.tgdd.vn/Products/Images/1943/307963/tu-lanh-samsung-inverter-488-lit-rt49cb663422sv-1-600x600.jpg" alt="Tủ lạnh Samsung">
+      <div class="product-info">
+        <h3>Tủ lạnh Samsung Inverter 488L</h3>
+        <span class="price">19.490.000₫</span>
+        <button class="btn">Thêm vào giỏ</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://cdn.tgdd.vn/Products/Images/1944/302079/may-giat-lg-inverter-10-kg-fv1410s3b-1-600x600.jpg" alt="Máy giặt LG">
+      <div class="product-info">
+        <h3>Máy giặt LG Inverter 10kg</h3>
+        <span class="price">8.790.000₫</span>
+        <button class="btn">Thêm vào giỏ</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://cdn.tgdd.vn/Products/Images/1945/307456/may-lanh-daikin-inverter-1-hp-ftkb25wmvmv-1-600x600.jpg" alt="Máy lạnh Daikin">
+      <div class="product-info">
+        <h3>Máy lạnh Daikin Inverter 1HP</h3>
+        <span class="price">10.290.000₫</span>
+        <button class="btn">Thêm vào giỏ</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://cdn.tgdd.vn/Products/Images/1992/236181/noi-com-dien-sharp-1-8-lit-ks-com19v-1-600x600.jpg" alt="Nồi cơm điện Sharp">
+      <div class="product-info">
+        <h3>Nồi cơm điện Sharp 1.8L</h3>
+        <span class="price">890.000₫</span>
+        <button class="btn">Thêm vào giỏ</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://cdn.tgdd.vn/Products/Images/1973/301897/lau-dien-supor-5l-hs505v-1-600x600.jpg" alt="Nồi lẩu điện Supor">
+      <div class="product-info">
+        <h3>Nồi lẩu điện Supor 5L</h3>
+        <span class="price">1.190.000₫</span>
+        <button class="btn">Thêm vào giỏ</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
